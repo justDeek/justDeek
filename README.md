@@ -22,6 +22,10 @@ Most of my repos are private, but if you're interested in what I do, check out m
 <a href="https://github.com/justDeek/webdev-helpers">
   <img width="48%" align="top" src="https://github-readme-stats.vercel.app/api/pin/?username=justDeek&repo=webdev-helpers&border_color=5ecbff&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=5ecbff&border_radius=10">
 </a>
+<br>
+<a href="https://github.com/justDeek/AutoHotkey-Collection">
+  <img width="48%" align="top" src="https://github-readme-stats.vercel.app/api/pin/?username=justDeek&repo=AutoHotkey-Collection&border_color=5ecbff&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=5ecbff&border_radius=10">
+</a>
 
 \
 <br>
