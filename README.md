@@ -1,8 +1,13 @@
+<br>
+<div style="width: 100%;">
+  <img src="Resources/content.svg" width="100%">
+</div>
 
-<h1 align="center">Hi 👋, I'm Deek</h1>
-<h3 align="center">I ❤️ creating games and web-apps, with some interest in AI and procedural generation.</h3>
+<h4 align="center">I ❤️ creating games and web-apps, with interest in UI design, AI, and procedural generation.</h3>
 
 <br>
+<br>
+
 
 ### About me
 
@@ -39,12 +44,12 @@ My weapon of choice is C#, but I am also fluent in JS, PHP, and various frontend
 
 [//]: # (<br>)
 
-[//]: # (### Stats)
+### Stats
 
-[//]: # ()
-[//]: # (<p align="center">)
 
-[//]: # (<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=justDeek&theme=github_dark" alt="stats">)
+<p align="center">
+
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=justDeek&theme=github_dark" alt="stats">
 
 [//]: # ()
 [//]: # ([//]: # &#40;<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=justDeek&layout=compact&theme=github_dark" alt="stats">&#41;)

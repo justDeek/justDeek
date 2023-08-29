@@ -1,0 +1,241 @@
+<!--based on: https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/-->
+<svg fill="none" viewBox="0 0 575 200" width="575" height="200" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @property --rotate {
+        syntax: "&lt;angle&gt;";
+        initial-value: 132deg;
+        inherits: false;
+      }
+    
+      :root {
+        --card-width: 500px;
+        --card-height: 150px;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        text-decoration: none;
+        list-style: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+    
+      .body {
+        --color-main: #9B5DE5;
+        --color-primary: #F15BB5;
+        --color-secondary: #00BBF9;
+        --color-background: #ffffff;
+    
+        width: var(--card-width);
+        height: var(--card-height);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-image: radial-gradient(var(--color-main), var(--color-primary), var(--color-secondary));
+        animation: border 5s linear infinite;
+        background-size: 200% 200%;
+        background-position: 0 0;
+        border-radius: 27px;
+        margin: 10px auto;
+        border: 7px solid #ffffffb3;
+      }
+    
+      .card {
+        background: var(--color-background);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 19px;
+      }
+    
+      .card::after {
+        position: absolute;
+        content: "";
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 100px;
+        width: 450px;
+        margin: 0 auto;
+        transform: scaleX(0.95) scaleY(0.9);
+        filter: blur(calc(var(--card-height) / 6));
+        background-image: linear-gradient( var(--rotate) , #5ddcff, #3c67e3 43%, #4e00c2);
+        opacity: 0.6;
+        transition: opacity .5s; 
+        animation: spin 2.5s linear infinite;
+      }
+    
+      h1 {
+        font-size: 2.75rem;
+        font-weight: 300;
+        font-family: "Verdana", monospace;
+        text-align: center;
+        text-transform: capitalize;
+        margin-top: -5px;
+        
+        background: -webkit-linear-gradient(#aed3ff26 30%, #6f98be2b 80%);
+        -webkit-background-clip: text;
+        text-shadow: 3px 3px 3px #9875a54a;
+        color: #9f8fe7c7;
+      }
+    
+      .items {
+        margin-top: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    
+      ul {
+        font-size: 1.2rem;
+        line-height: 26px;
+        font-family: sans-serif;
+        background: -webkit-linear-gradient(#aed3ff26 30%, #6f98be2b 80%);
+        -webkit-background-clip: text;
+        text-shadow: 2px 2px 3px #9875a54a;
+        color: #9f8fe7c7;
+        border-radius: 20px;
+      }
+    
+      ul li {
+        display: flex;
+        letter-spacing: 0.05vw;
+      }
+    
+      .hand {
+        display: inline-block;
+        transform-origin: 70% 70%;
+        animation: wave 3s linear -2s infinite;
+      }
+    
+      @keyframes border {
+        0% {
+          background-position: 0 0;
+        }
+        20% {
+          background-position: 100% 0;
+        }
+        40% {
+          background-position: 100% 100%;
+        }
+        60% {
+          background-position: 0 100%;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+    
+      @keyframes wave {
+        25% {
+          transform: rotate(0deg);
+        }
+        30% {
+          transform: rotate(15deg);
+        }
+        35% {
+          transform: rotate(0deg);
+        }
+        40% {
+          transform: rotate(15deg);
+        }
+        45% {
+          transform: rotate(0deg);
+        }
+        80% {
+          transform: rotate(0deg);
+        }
+        85% {
+          transform: rotate(15deg);
+        }
+        90% {
+          transform: rotate(0deg);
+        }
+        95% {
+          transform: rotate(15deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      
+      @keyframes spin {
+        0% {
+          --rotate: 0deg;
+        }
+        100% {
+          --rotate: 360deg;
+        }
+      }
+    
+      @keyframes fade {
+        0%, 75% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @media (prefers-color-scheme: dark) {
+        .body {
+          --color-main: #9d00ff;
+          --color-primary: #6800ff;
+          --color-secondary: #232bff;
+          --color-background: #0d1117;
+          border-radius: 22px;
+          border: none;
+        }
+        
+        h1, ul {
+          color: #a20be8de;
+        }
+        
+        h1 {
+          text-shadow: 3px 3px 3px #7875a47a;
+        }
+        
+        ul {
+          text-shadow: 2px 2px 3px #7875a47a;
+        }
+        
+        .card {
+          height: calc(100% - 10px);
+          width: calc(100% - 10px);
+          border-radius: 18px;
+        }
+        
+        .card::after {
+          top: 58px;
+          height: 95px;
+          width: 490px;
+          opacity: .75;
+        }
+      }
+      </style>
+      <div class='body'>
+        <div class='card'>
+          <h1>
+            Hi <span class='hand'>👋</span>, I'm Deek!
+          </h1>
+          <section class='items'>
+            <ul>
+              <li>Web-Developer &amp; Game-Designer</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
