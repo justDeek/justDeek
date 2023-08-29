@@ -203,11 +203,11 @@
         }
         
         h1 {
-          text-shadow: 3px 3px 3px #7875a47a;
+          text-shadow: 3px 3px 3px #7875A432;
         }
         
         ul {
-          text-shadow: 2px 2px 3px #7875a47a;
+          text-shadow: 2px 2px 3px #7875A432;
         }
         
         .card {

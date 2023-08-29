@@ -3,11 +3,8 @@
   <img src="Resources/content.svg" width="100%">
 </div>
 
-<h4 align="center">I ❤️ creating games and web-apps, with interest in UI design, AI, and procedural generation.</h3>
-
+<h3 align="center">I ❤️ creating games and web-apps, with interest in UI design, AI, and procedural generation.</h3>
 <br>
-<br>
-
 
 ### About me
 
